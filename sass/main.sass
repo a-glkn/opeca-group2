@@ -1,0 +1,166 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #777B84
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*
+	outline: none !important
+	margin: 0
+	padding: 0
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.333
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	padding-top: 110px
+	input, textarea
+		border: #666 1px solid
+		outline: none
+
+
+.section_products
+    .heading
+        margin-bottom: 60px
+
+    .col-product
+        margin-top: 20px
+
+.section_ecosystem
+	background: rgb(110,200,238)
+	background: linear-gradient(339deg, rgba(110,200,238,1) 0%, rgba(218,244,255,1) 100%)
+	padding-top: 120px
+	overflow: hidden
+	position: relative
+	>*
+		position: relative
+		z-index: 2
+	&:after
+		content: ''
+		display: block
+		width: 853px
+		height: 314px
+		position: absolute
+		top: 100%
+		left: 50%
+		margin-left: -426.5px
+		transform: translateY(-314px)
+		background-image: url(../img/circle.png)
+		background-repeat: no-repeat
+		background-position: 0 0
+		background-size: 853px 314px
+.section_banner
+	padding-top: 180px
+
+.section_feedback
+	padding-top: 117px
+	padding-bottom: 85px
+	.heading
+		margin-bottom: 36px
+	.form
+		margin-top: 80px
+
+
+.header
+	position: fixed
+	height: 110px
+	width: 100%
+	top: 0
+	left: 0
+	box-shadow: 0px 4px 4px #E2E8EB
+	z-index: 100
+	background-color: #fff
+	.container
+		position: relative
+	&__logo
+		width: 83px
+		height: 70px
+		position: absolute
+		left: 0
+		top: 20px
+		svg
+			width: 83px
+			height: 70px
+	&__menu
+		display: flex
+		width: 100%
+		position: absolute
+		top: 45px
+		left: 0
+		padding-left: 83px + 30px
+		padding-right: 186px + 30px
+		justify-content: space-between
+		li
+			list-style-type: none
+			a
+				font-size: 18px
+				color: #303844
+				text-decoration: none
+				font-weight: 500
+				transition: .3s ease
+				&:hover
+					color: $accent
+	&__phone
+		font-size: 24px
+		font-weight: bold
+		position: absolute
+		right: 0
+		top: 40px
+		a
+			color: #076197
+			text-decoration: none
+			transition: .3s ease
+			&:hover
+				color: $accent
+.footer
+	padding-top: 40px
+	background-color: #F0F7FA
+	padding-bottom: 62px
+	.col-contacts
+		text-align: right
+		a
+			text-decoration: none
+			transition: .3s ease
+			&:hover
+				color: $accent
+	&__logo
+		width: 173px
+		height: 146px
+		svg
+			width: 173px
+			height: 146px
+	&__contacts
+		font-size: 24px
+		color: #666B71
+		a
+			color: #666B71
+	&__phone
+		font-size: 36px
+		color: #303844
+		margin-bottom: 20px
+		margin-top: 22px
+		a
+			text-decoration: none
+			color: #303844
+	&__menu
+		margin-top: 46px
+		li
+			list-style-type: none
+			margin-bottom: 20px
+			a
+				color: #303844
+				text-decoration: none
+				font-size: 16px
+				transition: .3s ease
+				&:hover
+					color: $accent
+@import "media" // Always at the end

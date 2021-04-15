@@ -1,0 +1,195 @@
+@import "vars"
+
+
+    
+// ≥1200px
++media-breakpoint-down(lg)
+    body
+        padding-top: 90px
+    .ecosystem-group-2
+        display: none !important
+    .section_ecosystem
+        padding-top: 80px
+    .ecosystem-text
+        margin-top: 80px
+    .ecosystem-group
+        flex-wrap: wrap
+        padding-left: 0
+        padding-right: 0
+        justify-content: space-between
+    .ecosystem-item
+        width: calc(50% - 10px) !important
+        height: 180px !important
+        padding-top: 50px !important
+        margin-top: 0 !important
+        text-align: right !important
+        border-radius: 0 30px 0 30px !important
+        padding-right: 40px !important
+        &__icon
+            top: 65px !important
+            right: 91px !important
+            left: auto !important
+        &__title
+            top: 114px !important
+            right: 0 !important
+            padding-right: 40px !important
+        &__icon
+            right: 91px !important
+
+    .header
+        height: 90px
+        &__logo
+            width: 66.4px
+            height: 56px
+            position: absolute
+            left: 0
+            top: 17px
+            svg
+                width: 66.4px
+                height: 56px
+        &__menu
+            top: 33.5px
+            padding-left: 66.4px + 30px
+            padding-right: 139px + 30px
+            li
+                a
+                    font-size: 16px
+        &__phone
+            font-size: 18px
+            top: 34px
+    .splide
+        &__pagination
+            margin-left: -470px
+
+        &__arrow
+            &--prev
+                margin-left: -497px - 50px
+            &--next
+                margin-left: 497px
+
+    .splide
+        &__slide
+            min-height: 720px
+// ≥992px
++media-breakpoint-down(md)
+    .section-offset
+        padding-top: 60px
+        padding-bottom: 60px
+    body
+        padding-top: 60px
+    .heading
+        &_md
+            font-size: 40px
+        &_sm
+            font-size: 30px
+
+    .header
+        height: 60px
+        &__menu
+            display: none
+
+        &__logo
+            width: 53.12px
+            height: 44.8px
+            top: 7.6px
+            left: 15px
+            svg
+                width: 53.12px
+                height: 44.8px
+        &__phone
+            display: none
+    .product-card
+        &__title
+            font-size: 30px
+
+
+
+    .menu-toggler
+        display: block
+
+
+    .splide
+        &__slide
+            min-height: 600px
+        &__arrows
+            display: none
+        &__pagination
+            margin-left: 0
+            width: 100%
+            text-align: center
+            left: 0
+            top: auto
+            bottom: 40px
+
+    .banner_ocenka
+        &:after
+            display: none
+
+    .section_banner
+        padding-top: 80px
+
+    .section_feedback
+        padding-top: 80px
+
+    .section_products .heading
+        margin-bottom: 20px
+
+    .section_feedback .form
+        margin-top: 40px
+
+    .footer__logo
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 40px
+    .footer__menu
+        text-align: center
+        margin-top: 0
+    .footer .col-contacts
+        text-align: center
+
+    .footer__phone
+        font-size: 24px
+
+    .footer__contacts
+        font-size: 20px
+
+// ≥768px
++media-breakpoint-down(sm)
+    .ecosystem-item
+        width: 100% !important
+
+// ≥576px
++media-breakpoint-down(xs)
+    .product-card
+        &__title
+            font-size: 24px
+        &__text
+            font-size: 16px
+
+        &__img
+            margin-bottom: 20px
+    .text, .banner__text
+        font-size: 16px
+
+    .section_ecosystem
+        &:after
+
+    .heading
+        &_md
+            font-size: 32px
+        &_sm
+            font-size: 24px
+    
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

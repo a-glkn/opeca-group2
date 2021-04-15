@@ -1,0 +1,437 @@
+$default-font: "CoreSans", sans-serif
+$accent: #91BF29
+$text: #000
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px
+$grid-columns: 12
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px)
+
+$gutter: $grid-gutter-width
+
+.text-center
+    text-align: center
+
+.heading
+    color: #303844
+    font-weight: bold
+    line-height: 100%
+    &_md
+        font-size: 48px
+    &_sm
+        font-size: 36px
+        
+.bg-blue
+    background-color: #F2F7FA
+
+.btn
+    color: #F2F7FA
+    border: 0
+    background-color: $accent
+    font-size: 18px
+    line-height: 2
+    padding-top: 12px
+    padding-bottom: 12px
+    border-radius: 30px
+    padding-left: 45px
+    padding-right: 45px
+    cursor: pointer
+    transition: .3s ease
+    &:hover
+        box-shadow: 10px 10px 24px rgba(180, 255, 10, 0.3)
+    &_secondary
+        background-color: #F2F7FA
+        color: #303844
+        &:hover
+            color: #F2F7FA
+            background-color: $accent
+            box-shadow: none
+
+
+
+.section-offset
+    padding-top: 80px
+    padding-bottom: 80px
+
+.product-card
+    padding: 20px
+    padding-bottom: 90px
+    background-color: #fff
+    border-radius: 30px
+    height: 100%
+    position: relative
+    &__img
+        margin-bottom: 40px
+        img
+            max-width: 100%
+            border-radius: 15px
+
+    &__title
+        font-size: 36px
+        color: #303844
+        margin-bottom: 18px
+    &__text
+        font-size: 18px
+        color: #666B71
+        line-height: 1.33
+    &__link
+        position: absolute
+        left: 0
+        padding-left: 20px
+        padding-right: 20px
+        bottom: 42px
+        a
+            text-decoration: none
+            color: #076197
+
+.banner
+    color: #666B71
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 50px
+    padding-bottom: 50px
+    font-size: 18px
+    background-image: url(../img/banner.svg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    border-radius: 30px
+    &__heading
+        margin-bottom: 30px
+    .btn
+        margin-top: 30px
+
+    &_ocenka
+        position: relative
+        &:after
+            position: absolute
+            right: 0
+            bottom: 0
+            content: ''
+            background-image: url(../img/ocenka.png)
+            width: 532px
+            height: 469px
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-size: 532px 469px
+
+.form
+    &__input, &__text
+        width: 100%
+        height: 60px
+        border: 1px solid #D6DBE1
+        border-radius: 30px
+        padding-left: 20px  
+        padding-right: 20px
+        font-size: 18px
+        color: #303844
+        margin-bottom: 30px
+        transition: .3s ease
+        &:focus
+            border-color: $accent
+    &__text
+        height: 200px
+        padding-top: 20px
+        padding-bottom: 20px
+
+
+.text
+    font-size: 18px
+    color: #666B71
+
+.ecosystem-item
+    background-color: rgba(255,255,255, 0.75)
+    position: relative
+    margin-bottom: 20px
+    &__num
+        color: #A4DDFF
+        font-size: 64px
+        line-height: 1
+    &__icon
+        width: 37px
+        height: 37px
+        position: absolute
+        svg
+            width: 37px
+            height: 37px
+    &__title
+        font-size: 24px
+        color: #303844
+        position: absolute
+    &_left
+        border-radius: 30px 0 30px 0
+        .ecosystem-item
+            &__title
+                left: 0
+        &.ecosystem-item
+            &_sm
+                padding-left: 30px
+                .ecosystem-item
+                    &__title
+                        padding-left: 30px
+                    &__icon
+                        left: 30px
+                    &__num
+                        padding-left: 13px
+            &_lg
+                padding-left: 30px
+                .ecosystem-item
+                    &__title
+                        padding-left: 30px
+                    &__icon
+                        left: 30px
+                    &__num
+                        padding-left: 13px
+            &_md
+                padding-left: 40px
+                .ecosystem-item
+                    &__title
+                        padding-left: 40px
+                    &__icon
+                        left: 40px
+                    &__num
+                        padding-left: 18px
+    &_right
+        text-align: right
+        border-radius: 0 30px 0 30px
+        .ecosystem-item
+            &__title
+                right: 0
+        &.ecosystem-item
+            &_sm
+                padding-right: 30px
+                .ecosystem-item
+                    &__title
+                        padding-right: 30px
+                .ecosystem-item
+                    &__icon
+                        right: 76px
+            &_lg
+                padding-right: 30px
+                .ecosystem-item
+                    &__title
+                        padding-right: 30px
+                .ecosystem-item
+                    &__icon
+                        right: 73px
+            &_md
+                padding-right: 40px
+                .ecosystem-item
+                    &__title
+                        padding-right: 40px
+                .ecosystem-item
+                    &__icon
+                        right: 91px
+    &_sm
+        height: 130px
+        width: 194px
+        padding-top: 25px
+        .ecosystem-item
+            &__title
+                top: 80px
+            &__icon
+                top: 39px
+    &_lg
+        width: 270px
+        height: 180px
+        padding-top: 50px
+        .ecosystem-item
+            &__icon
+                top: 67px
+    &_md
+        width: 240px
+        height: 180px
+        padding-top: 50px
+        .ecosystem-item
+            &__icon
+                top: 65px
+
+.ecosystem-group-1
+    padding-left: 20px
+    padding-right: 20px
+    display: flex
+    justify-content: space-between
+    .ecosystem-item-2, .ecosystem-item-5
+        margin-top: 80px
+
+.ecosystem-group-2
+    display: flex
+    justify-content: space-between
+
+.ecosystem-text
+    max-width: 580px
+    margin-left: auto
+    margin-right: auto
+    padding-bottom: 40px
+    margin-top: -100px
+    .heading
+        margin-bottom: 20px
+
+
+
+.splide
+    &__slide
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        min-height: 890px
+        .heading
+            margin-bottom: 10px
+        .btn
+            margin-top: 25px
+    &__arrows
+        height: 50px
+        position: absolute
+        top: 50%
+        margin-top: -25px
+        width: 100%
+        z-index: 1
+    &__arrow
+        width: 50px
+        height: 50px
+        border: 0
+        border-radius: 50%
+        background-color: rgba(255,255,255, 0.5)
+        position: absolute
+        cursor: pointer
+        left: 50%
+        transition: .3s ease
+        &:hover
+            background-color: rgba(255,255,255, 1)
+        svg
+            display: none
+        &:after
+            width: 11.12px
+            height: 20.02px
+            content: ''
+            display: block
+            position: absolute
+            top: 15px
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-image: url(../img/arrow.svg)
+        &--prev
+            margin-left: -617px - 50px
+            &:after
+                left: 17px
+        &--next
+            margin-left: 617px
+            &:after
+                right: 17px
+                transform: rotate(180deg)
+
+
+    &__pagination
+        position: absolute
+        display: block
+        z-index: 2
+        top: 50%
+        width: auto
+        margin-top: 205px
+        left: 50%
+        margin-left: -555px
+        li
+            display: inline-block
+            margin: 0 5px
+            button
+                width: 10px
+                height: 10px
+                border: 0
+                background-color: #D6DBE1
+                border-radius: 50%
+                transition: .3s ease
+                cursor: pointer
+                &.is-active
+                    background-color: #91BF29
+
+
+.menu-wrapper
+    display: none
+
+
+.menu-toggler
+    width: 30px
+    height: 26px
+    position: absolute
+    right: 15px
+    top: 17px
+    display: none
+    cursor: pointer
+    i
+        width: 21px
+        height: 2px
+        background-color: $accent
+        position: absolute
+        top: 5px
+        left: 4px
+        transform-origin: top left
+        &:before
+            content: ''
+            display: block
+            width: 100%
+            height: 2px
+            position: absolute
+            top: 7px
+            background-color: $accent
+        &:after
+            content: ''
+            display: block
+            width: 100%
+            height: 2px
+            position: absolute
+            top: 14px
+            background-color: $accent
+
+
+.menu-openned
+    .menu-toggler
+        i
+            left: 8px
+            transform: rotate(45deg)
+            &:before
+                top: 0
+                transform: rotate(-90deg)
+            &:after
+                display: none
+
+
+.menu-wrapper
+    height: calc(100% - 60px)
+    position: fixed
+    top: 60px
+    left: 0
+    width: 100%
+    z-index: 110
+    background-color: #fff
+    display: none
+    &__inner
+        width: 100%
+        display: flex
+        overflow-y: auto
+        flex-wrap: wrap
+        .menu
+            margin: auto
+            width: 100%
+            text-align: center
+            li
+                list-style-type: none
+                padding-top: 10px
+                padding-bottom: 10px
+                &.phone
+                    a
+                        font-size: 24px
+                        color: #076197
+                a
+                    text-decoration: none
+                    width: 100%
+                    color: #303844
+                    font-size: 20px
+                    transition: .3s ease 
+                    &:hover
+                        color: $accent
+
+.menu-openned
+	overflow: hidden
+	.menu-wrapper
+		display: flex

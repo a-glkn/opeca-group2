@@ -13,7 +13,7 @@ openPopup('order-popup');
 Например так это выглядит на кнопке:
 
 ```html
-<button onClick="openPopup('order-popup');">Все отзывы</button>
+<button onClick="openPopup('order-popup');">Открыть</button>
 ```
 
 Для закрытия окна используется (без параметров):

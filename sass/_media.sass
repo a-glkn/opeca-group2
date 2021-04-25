@@ -57,19 +57,24 @@
         &__phone
             font-size: 18px
             top: 34px
-    .splide
-        &__pagination
-            margin-left: -470px
+    .intro-slider
+        .splide
+            &__pagination
+                margin-left: -470px
 
+    .splide
         &__arrow
             &--prev
                 margin-left: -497px - 50px
             &--next
                 margin-left: 497px
+    .intro-slider
+        .splide
+            &__slide
+                min-height: 720px
 
-    .splide
-        &__slide
-            min-height: 720px
+    .section-scroll-track
+        padding-top: 90px
 // ≥992px
 +media-breakpoint-down(md)
     .section-offset
@@ -82,9 +87,13 @@
             font-size: 40px
         &_sm
             font-size: 30px
-
+        &_xs
+            font-size: 21px
     .header
         height: 60px
+        position: fixed !important
+        box-shadow: 0px 4px 4px #E2E8EB !important
+        background-color: #fff !important
         &__menu
             display: none
 
@@ -102,24 +111,28 @@
         &__title
             font-size: 30px
 
+    .section_spec-food
+        .heading
+            margin-bottom: 40px
 
 
     .menu-toggler
         display: block
 
-
     .splide
-        &__slide
-            min-height: 600px
         &__arrows
-            display: none
-        &__pagination
-            margin-left: 0
-            width: 100%
-            text-align: center
-            left: 0
-            top: auto
-            bottom: 40px
+                display: none
+    .intro-slider
+        .splide
+            &__slide
+                min-height: 600px
+            &__pagination
+                margin-left: 0
+                width: 100%
+                text-align: center
+                left: 0
+                top: auto
+                bottom: 40px
 
     .banner_ocenka
         &:after
@@ -153,11 +166,49 @@
     .footer__contacts
         font-size: 20px
 
+    .row-icons
+        .icon-element
+            margin-top: 50px
+            margin-bottom: 0
+
+    .section_diet
+	    .row-items
+            .col-item
+                margin-bottom: 50px
+                &:last-child
+                    margin-bottom: 0
+
+    .form-delivery
+        padding: 10px
+        .form__input, .btn
+            margin-top: 20px
+
+    .section_quote 
+        .container
+            &:after
+                width: 270.2px
+                height: 441.7px
+                background-size: 270.2px 441.7px
+            
 // ≥768px
 +media-breakpoint-down(sm)
     .ecosystem-item
         width: 100% !important
+    .form-delivery
+        padding: 10px
+        .form__input, .btn
+            margin-top: 20px
 
+        .js-Dropdown
+            margin-bottom: 20px
+
+        .form__input
+            margin-top: 0
+    .popup
+        left: 0%
+        border-radius: 30px
+        width: 94%
+        margin-left: 3%
 // ≥576px
 +media-breakpoint-down(xs)
     .product-card
@@ -179,7 +230,21 @@
             font-size: 32px
         &_sm
             font-size: 24px
+        &_xs
+            font-size: 18px
     
+
+
+    .section_quote
+        .container
+            padding-bottom: 170px
+            &:after
+                width: 189.14px
+                height: 309.19px
+                background-size: 189.14px 309.19px
+
+
+
 /*==========  Mobile First  ==========*/
 
 // ≤576px

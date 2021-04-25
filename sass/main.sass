@@ -28,6 +28,7 @@ body
 		outline: none
 
 
+
 .section_products
     .heading
         margin-bottom: 60px
@@ -65,10 +66,35 @@ body
 	padding-top: 117px
 	padding-bottom: 85px
 	.heading
-		margin-bottom: 36px
+		margin-bottom: 0.6em
 	.form
 		margin-top: 80px
 
+.section_delivery-intro
+	background-image: url(../img/delivery-bg.svg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	min-height: 600px
+	.form-delivery
+		position: relative
+		z-index: 10
+	.bg
+		max-width: 1280px
+		margin: 0 auto
+		img
+			margin-top: -30px
+			max-width: 100%
+			height: auto
+
+	.row-text
+		padding-top: 60px
+		padding-bottom: 60px
+		.heading
+			margin-bottom: 0.6em
+
+.section-scroll-track
+	padding-top: 110px
 
 .header
 	position: fixed
@@ -121,6 +147,22 @@ body
 			transition: .3s ease
 			&:hover
 				color: $accent
+
+.header-inside
+	padding-top: 0
+	.header
+		position: absolute
+		background-color: transparent
+		box-shadow: none
+
+.header-inside
+	&_fixed
+		.header
+			position: fixed
+			background-color: #fff
+			box-shadow: none
+			box-shadow: 0px 4px 4px #E2E8EB
+
 .footer
 	padding-top: 40px
 	background-color: #F0F7FA
@@ -163,4 +205,69 @@ body
 				transition: .3s ease
 				&:hover
 					color: $accent
+
+.row-icons
+	.icon-element
+		margin-bottom: 70px
+
+.section_spec-food
+	.heading
+		margin-bottom: 80px
+
+.section_order
+	.heading
+		margin-bottom: 0.6em
+	.form__input
+		margin-bottom: 20px
+	.col-item
+		margin-bottom: 50px
+
+	.form
+		margin-top: 50px
+
+.section_quote
+	background-image: url(../img/bg.svg)
+	background-size: cover
+	background-position: center
+	min-height: 560px
+	.row	
+		width: 100%
+	.container
+		min-height: 560px
+		position: relative
+		&:after
+			bottom: 0
+			right: 0px
+			content: ''
+			display: block
+			position: absolute
+			width: 386px
+			height: 631px
+			background-repeat: no-repeat
+			background-position: center
+			background-image: url(../img/mavrin.png)
+			background-size: 386px 631px
+
+.section_diet
+	.heading
+		margin-bottom: 0.6em
+	.row-items
+		margin-top: 50px
+
+.section_reviews
+	.reviews-slider
+		margin-top: 50px
+	.row-btn
+		margin-top: 60px
+
+.form-delivery
+	padding: 5px
+	background-color: #FFFFFF
+	border-radius: 30px
+	.btn
+		width: 100%
+
+	.form__input, .btn
+		margin-bottom: 0
+
 @import "media" // Always at the end

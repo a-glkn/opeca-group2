@@ -13,14 +13,19 @@ $gutter: $grid-gutter-width
 .text-center
     text-align: center
 
+.text-grey
+    color: #666B71 !important
+
 .heading
     color: #303844
     font-weight: bold
-    line-height: 100%
+    line-height: 1.23
     &_md
         font-size: 48px
     &_sm
         font-size: 36px
+    &_xs
+        font-size: 24px
         
 .bg-blue
     background-color: #F2F7FA
@@ -47,8 +52,21 @@ $gutter: $grid-gutter-width
             color: #F2F7FA
             background-color: $accent
             box-shadow: none
-
-
+    &_thin
+        border: 2px solid #91BF29
+        background-color: #fff
+        box-shadow: none !important
+        color: #303844
+        &:hover
+            background-color: #91BF29
+            color: #fff
+    &_w-auto
+        width: auto
+        padding-left: 0
+        padding-right: 0
+    &_h-50
+        padding-top: 7px
+        padding-bottom: 7px
 
 .section-offset
     padding-top: 80px
@@ -129,16 +147,89 @@ $gutter: $grid-gutter-width
         margin-bottom: 30px
         transition: .3s ease
         &:focus
-            border-color: $accent
+            border-color: #F2F7FA
+            background-color: #F2F7FA
+        &_h-50
+            height: 50px
+        &_fz-16
+            font-size: 16px
     &__text
         height: 200px
         padding-top: 20px
         padding-bottom: 20px
+    .radios
+        p
+            padding: 0
+            margin: 0
+        label
+            margin-bottom: 20px
+            width: 100%
+            background-color: #fff
+            font-size: 18px
+            color: #8e8e8e
+            border-radius: 20px
+            position: relative
+            padding-right: 45px
+            padding-left: 20px
+            padding-top: 12px
+            padding-bottom: 11px
+            border: 2px solid #F2F7FA
+        [type="radio"]:checked,
+        [type="radio"]:not(:checked) 
+            position: absolute
+            left: -9999px
 
+        [type="radio"]:checked + label
+            color: #3d6394
+        [type="radio"]:checked + label,
+        [type="radio"]:not(:checked) + label
+            position: relative
+            cursor: pointer
+            display: inline-block
+        [type="radio"]:checked + label:after,
+        [type="radio"]:not(:checked) + label:after 
+            content: ''
+            width: 20px
+            height: 20px
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-image: url(../img/active.svg)
+            position: absolute
+            top: 50%
+            margin-top: -10px
+            right: 20px
+
+        [type="radio"]:not(:checked) + label:after 
+            background-image: url(../img/dis.svg)
+            transform: rotate(45deg)
+        [type="radio"]:checked + label
+            background-color: #F2F7FA
+  
+     
 
 .text
     font-size: 18px
     color: #666B71
+    line-height: 1.236666
+    p
+        font-size: 18px
+        color: #666B71
+        margin-bottom: 1em
+
+.step-block
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    height: 100%
+    padding: 30px
+    border: 2px solid #F2F7FA
+    border-radius: 30px
+    padding-bottom: 10px
+    &__title
+        text-align: center
+        font-size: 24px
+        color: #303844
+        margin-bottom: 40px
 
 .ecosystem-item
     background-color: rgba(255,255,255, 0.75)
@@ -266,20 +357,10 @@ $gutter: $grid-gutter-width
     padding-bottom: 40px
     margin-top: -100px
     .heading
-        margin-bottom: 20px
-
+        margin-bottom: 0.6em
 
 
 .splide
-    &__slide
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
-        min-height: 890px
-        .heading
-            margin-bottom: 10px
-        .btn
-            margin-top: 25px
     &__arrows
         height: 50px
         position: absolute
@@ -298,7 +379,7 @@ $gutter: $grid-gutter-width
         left: 50%
         transition: .3s ease
         &:hover
-            background-color: rgba(255,255,255, 1)
+            background-color: #F2F7FA
         svg
             display: none
         &:after
@@ -321,29 +402,45 @@ $gutter: $grid-gutter-width
                 right: 17px
                 transform: rotate(180deg)
 
+.intro-slider
+    .splide
+        &__slide
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            min-height: 890px
+            .heading
+                margin-bottom: 10px
+            .btn
+                margin-top: 25px
+  
+        &__pagination
+            position: absolute
+            display: block
+            z-index: 2
+            top: 50%
+            width: auto
+            margin-top: 205px
+            left: 50%
+            margin-left: -555px
+            li
+                display: inline-block
+                margin: 0 5px
+                button
+                    width: 10px
+                    height: 10px
+                    border: 0
+                    background-color: #D6DBE1
+                    border-radius: 50%
+                    transition: .3s ease
+                    cursor: pointer
+                    &.is-active
+                        background-color: #91BF29
 
-    &__pagination
-        position: absolute
-        display: block
-        z-index: 2
-        top: 50%
-        width: auto
-        margin-top: 205px
-        left: 50%
-        margin-left: -555px
-        li
-            display: inline-block
-            margin: 0 5px
-            button
-                width: 10px
-                height: 10px
-                border: 0
-                background-color: #D6DBE1
-                border-radius: 50%
-                transition: .3s ease
-                cursor: pointer
-                &.is-active
-                    background-color: #91BF29
+.reviews-slider
+    .splide
+        &__slide
+            padding: 0 10px
 
 
 .menu-wrapper
@@ -435,3 +532,208 @@ $gutter: $grid-gutter-width
 	overflow: hidden
 	.menu-wrapper
 		display: flex
+
+
+.icon-element
+    display: flex
+    &__icon
+        width: 89.7px
+        height: 89.7px
+        position: relative
+        z-index: 1
+        &:after
+            content: ''
+            display: block
+            width: 118.79px
+            height: 118.79px
+            display: block
+            position: absolute
+            top: -13.85px
+            left: 36.2px
+            background-color: #fff
+            border-radius: 50%
+            background: radial-gradient(75.52% 75.52% at 17.34% 13.34%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+            backdrop-filter: blur(4px)
+        svg
+            width: 89.7px
+            height: 89.7px
+    &__content
+        position: relative
+        z-index: 2
+        margin-left: 5px
+        margin-top: -10px
+        &-num
+            font-size: 64px
+            line-height: 100%
+            color: #303844
+        &-text
+            font-size: 18px
+            line-height: 22px
+            color: #303844
+
+
+.diet-card
+    padding: 30px
+    border-radius: 30px
+    text-align: center
+    background-color: #fff
+    height: 100%
+    padding-bottom: 115px
+    &__img
+        img
+            max-width: 100%
+            height: auto
+            border-radius: 20px
+    &__title
+        margin-top: 30px
+        font-size: 24px
+        line-height: 1.2366
+    &__text
+        margin-top: 10px
+        color: #666B71
+        font-size: 18px
+        line-height: 1.4
+    .btn
+        position: absolute
+        bottom: 30px
+        display: inline-block
+        left: 50%
+        width: 180px
+        margin-left: -90px
+
+.reviews-item
+    border: 2px solid #F2F7FA
+    border-radius: 30px
+    padding: 20px
+    height: 100%
+    padding-bottom: 135px
+    &__img
+        img
+            max-width: 100%
+            height: auto
+            border-radius: 15px
+    &__title
+        font-size: 24px
+        line-height: 1.2366
+        color: #303844
+        margin-top: 15px
+    &__tags
+        margin-top: 30px
+        a
+            color: #91BF29
+            font-size: 18px
+            text-decoration: none
+    &__text
+        margin-top: 15px
+        color: #666B71
+        font-size: 18px
+        line-height: 1.4
+
+    &__date
+        &:before
+            content: ''
+            display: block
+            width: calc(100% - 60px)
+            height: 2px
+            background-color: #F2F7FA
+            position: absolute
+            top: 0
+            left: 30px
+        position: absolute
+        padding-left: 30px
+        padding-right: 30px
+        width: 100%
+        bottom: 50px
+        left: 0
+        padding-top: 20px
+        font-size: 18px
+        color: #666B71
+
+.js-Dropdown
+    width: 100%
+    .js-Dropdown-title
+        height: 50px
+        padding-left: 25px
+        padding-right: 40px
+        border-radius: 30px
+        border: 2px solid #F2F7FA !important
+        outline: none !important
+        font-family: $default-font
+        font-size: 16px
+        color: #666B71
+        &:after
+            content: ''
+            display: block
+            width: 13px
+            height: 8px
+            background-image: url(../img/arr.svg)
+            background-repeat: no-repeat
+            background-position: 0 0
+            border: 0
+            top: 22px
+            right: 25px
+
+
+    &.is-open
+        .js-Dropdown-title
+            border-radius: 30px 30px 0 0
+            border-bottom-color: #fff !important
+            &:after
+                transform: rotate(180deg)
+            
+
+
+.js-Dropdown-list
+    border: 2px solid #F2F7FA
+    border-radius: 0 0 30px 30px
+    border-top: 0
+    overflow: hidden
+    margin-top: -2px
+    li
+        border: 0
+        background-color: #fff
+        padding-left: 25px
+        padding-right: 25px
+        font-family: $default-font
+        font-size: 16px
+        color: #666B71
+        transition: .3s ease
+        &.is-selected
+            background-color: #fff
+            color: #91BF29
+        &:hover
+            background-color: #fff
+            color: #91BF29
+
+.popup-overlay
+    display: none
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: #303844
+    opacity: 0.7
+    z-index: 1000
+
+.popup
+    position: absolute
+    top: 0
+    left: 50%
+    background-color: #fff
+    border-radius: 30px
+    z-index: 1001
+    padding-top: 30px
+    padding-bottom: 30px
+    width: 640px
+    margin-left: -320px
+    display: none
+    .heading
+        margin-bottom: 0.3em
+    .form
+        margin-top: 40px
+        &__input
+            margin-bottom: 20px
+        
+        .js-Dropdown
+            margin-bottom: 20px

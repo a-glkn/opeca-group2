@@ -1,13 +1,11 @@
 
 const toggleClass = (el, className) => el.classList.toggle(className);
 
-
-document.querySelector('.menu-toggler').onclick = function() {
-	toggleClass(document.querySelector('body'), 'menu-openned');
-}
-
-
 document.addEventListener( 'DOMContentLoaded', function () {
+	document.querySelector('.menu-toggler').onclick = function() {
+		toggleClass(document.querySelector('body'), 'menu-openned');
+	}
+
 	var splide = document.getElementsByClassName('intro-slider') ? document.getElementsByClassName('intro-slider')[0] : null;
 	if (typeof(splide) != 'undefined' && splide != null) {
 		new Splide( '.intro-slider', {

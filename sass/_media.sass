@@ -75,6 +75,16 @@
 
     .section-scroll-track
         padding-top: 90px
+    .banner_journal
+        &:after
+            right: 0
+
+    .advantages
+        &__item
+            margin-top: 0
+            align-self: stretch
+            &-title
+                font-size: 20px
 // ≥992px
 +media-breakpoint-down(md)
     .section_delivery-intro, .section_smart-intro
@@ -142,12 +152,15 @@
                 top: auto
                 bottom: 40px
 
-    .banner_ocenka
+    .banner_ocenka, .banner_journal
         &:after
             display: none
 
     .section_banner
         padding-top: 80px
+
+    .section_banner-journal
+        padding-bottom: 80px
 
     .section_feedback
         padding-top: 80px
@@ -203,6 +216,10 @@
             margin-bottom: 40px
             &:last-child
                 margin-bottom: 0
+
+    .advantages
+        &__item
+            width: calc(50% - 10px)
             
 // ≥768px
 +media-breakpoint-down(sm)
@@ -228,6 +245,9 @@
         padding-left: 30px
         padding-right: 30px
     
+    .advantages
+        &__item
+            width: 100%
 // ≥576px
 +media-breakpoint-down(xs)
     .product-card

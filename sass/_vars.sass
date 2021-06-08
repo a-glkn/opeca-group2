@@ -146,6 +146,20 @@ html,body
             background-position: 0 0
             background-size: 532px 469px
 
+    &_journal
+        position: relative
+        &:after
+            position: absolute
+            right: 100px
+            bottom: 0
+            content: ''
+            background-image: url(../img/phone.png)
+            width: 499px
+            height: 382px
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-size: 499px 382px
+
 .form
     &__input, &__text
         width: 100%
@@ -776,6 +790,49 @@ html,body
                     svg path
                         fill: #fff
     
+
+.advantages
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__item
+        width: calc(33.33333% - 10px)
+        border-radius: 30px
+        transition: .3s ease
+        background-color: rgba(255,255,255,0.65)
+        padding-top: 40px
+        padding-left: 30px
+        padding-right: 30px
+        padding-bottom: 40px
+        text-align: center
+        box-shadow: 16px 18px 20px rgba(194, 212, 222, 0.19)
+        margin-bottom: 30px
+        align-self: start
+        &_1
+            margin-top: 45px
+        &_3
+            margin-top: 90px
+
+        &_5
+            margin-top: -80px
+        &_6
+            margin-top: -30px
+        &-icon
+            display: inline-block
+            width: 44px
+            height: 44px
+        &-title
+            font-size: 24px
+            color: #303844
+            margin-bottom: 0.5em
+            margin-top: 1em
+        &-text
+            font-size: 18px
+            color: #666B71
+            line-height: 2
+
+        &:hover
+            background-color: rgba(255,255,255,1)
 
 
 .js-Dropdown-list

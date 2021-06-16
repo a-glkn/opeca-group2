@@ -4,6 +4,12 @@
     
 // ≥1200px
 +media-breakpoint-down(lg)
+    .heading
+        &_lg
+            font-size: 54px
+    .digits
+        &__item
+            min-width: 320px
     body
         padding-top: 90px
     .ecosystem-group-2
@@ -101,6 +107,8 @@
     body
         padding-top: 60px
     .heading
+        &_lg
+            font-size: 48px
         &_md
             font-size: 40px
         &_sm
@@ -220,6 +228,14 @@
     .advantages
         &__item
             width: calc(50% - 10px)
+
+    .digits
+        flex-wrap: wrap
+        &__item
+            margin-bottom: 20px
+            min-width: 100%
+            &:after
+                display: none
             
 // ≥768px
 +media-breakpoint-down(sm)
@@ -248,6 +264,10 @@
     .advantages
         &__item
             width: 100%
+
+    .icon-element
+        &__text
+            font-size: 16px
 // ≥576px
 +media-breakpoint-down(xs)
     .product-card
@@ -265,6 +285,8 @@
         &:after
 
     .heading
+        &_lg
+            font-size: 40px
         &_md
             font-size: 32px
         &_sm

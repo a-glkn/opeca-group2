@@ -24,6 +24,8 @@ html,body
     color: #303844
     font-weight: bold
     line-height: 1.23
+    &_lg
+        font-size: 64px
     &_md
         font-size: 48px
     &_sm
@@ -474,6 +476,11 @@ a.btn
             padding: 0 10px
 
 
+.reviews-slider
+
+    &_bg-white
+        .reviews-item
+            background-color: #fff
 .menu-wrapper
     display: none
 
@@ -610,6 +617,8 @@ a.btn
     background-color: #fff
     height: 100%
     padding-bottom: 115px
+    &_no-offset
+        padding-bottom: 45px
     &__img
         img
             max-width: 100%
@@ -839,6 +848,35 @@ a.btn
         &:hover
             background-color: rgba(255,255,255,1)
 
+.icon-element
+    display: flex
+    margin-top: 50px
+    &__img
+        min-width: 96px
+        min-height: 90px
+        display: flex
+        position: relative
+        &:after
+            content: ''
+            display: block
+            background: radial-gradient(75.52% 75.52% at 17.34% 13.34%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+            backdrop-filter: blur(4px)
+            width: 118px
+            height: 118px
+            border-radius: 50%
+            position: absolute
+            left: 38px
+            margin-top: -59px
+            top: 50%
+        svg
+            margin: auto 0
+    &__text
+        position: relative
+        z-index: 2
+        font-size: 18px
+        color: #303844
+        margin: auto 0
+        line-height: 1.4
 
 .js-Dropdown-list
     border: 2px solid #F2F7FA
@@ -894,3 +932,29 @@ a.btn
         
         .js-Dropdown
             margin-bottom: 20px
+
+
+.digits
+    display: flex
+    justify-content: center
+    &__item
+        text-align: center
+        font-size: 18px
+        color: #303844
+        min-width: 380px
+        position: relative
+        &:after
+            content: ''
+            display: block
+            width: 6px
+            height: 64px
+            background-color: #F2F7FA
+            border-radius: 3px
+            position: absolute
+            right: -3px
+            top: 20px
+        &:last-child
+            &:after
+                display: none
+        .heading
+            color: #91BF29

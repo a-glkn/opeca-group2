@@ -82,6 +82,24 @@ html,body
         padding-top: 7px
         padding-bottom: 7px
 
+
+    &_search
+        text-align: left
+        padding-left: 20px
+        width: 100%
+        position: relative
+        &:after
+            content: ''
+            width: 18px
+            height: 18px
+            display: block
+            position: absolute
+            top: 16px
+            right: 16px
+            background-repeat: no-repeat
+            background-position: center
+            background-image: url(../img/search.svg)
+
 a.btn
     color: #fff
     text-decoration: none !important
@@ -475,6 +493,13 @@ a.btn
         &__slide
             padding: 0 10px
 
+
+.simple-slider
+    .splide
+        &__slide
+            img
+                max-width: 100%
+                height: auto
 
 .reviews-slider
 
@@ -958,3 +983,116 @@ a.btn
                 display: none
         .heading
             color: #91BF29
+
+
+.slider-bg
+    min-height: 890px
+    background-image: url(../img/slider-bg.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    display: flex
+    .container
+        margin-top: auto
+        margin-bottom: auto
+
+.result-card
+    display: flex
+    background: #FFFFFF
+    border-radius: 27px
+    padding: 20px
+    &__img
+        img
+            max-width: 326px
+            height: auto
+            border-radius: 20px
+    &__content
+        padding-left: 18px
+        width: 100%
+        display: flex
+        flex-direction: column
+    &__top
+        width: 100%
+        display: flex
+        padding-bottom: 12px
+        justify-content: space-between
+        border-bottom: 1px solid #F2F7FA
+        margin-bottom: 16px
+    &__title
+        font-size: 36px
+        color: #303844
+        line-height: 45px
+    &__price
+        text-align: right
+        color: #076197
+        font-size: 30px
+        line-height: 45px
+        text-align: right
+    &__addr
+        font-size: 18px
+        line-height: 1.2222
+        color: #303844
+    &__desc
+        font-size: 16px
+        line-height: 130%
+        color: #666B71
+        margin-top: 10px
+        margin-bottom: auto
+        padding-bottom: 30px
+    &__btns
+        margin-top: auto
+        .btn
+            width: 174px
+        .btn-more 
+            margin-right: 20px
+
+.advantage-card
+    display: flex
+    width: 100%
+    height: 160px
+    background: #F2F7FA
+    border-radius: 30px
+    padding-right: 30px
+    padding-left: 40px
+    &__icon
+        margin-top: auto
+        margin-bottom: auto
+        svg
+            width: 44px
+            height: 44px
+    &__text
+        font-size: 24px
+        line-height: 1.25
+        color: #303844
+        margin-top: auto
+        margin-bottom: auto
+        padding-left: 20px
+
+
+
+
+.form_designed
+    background-image: url(../img/banner.svg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    border-radius: 30px
+    padding-top: 60px
+    padding-bottom: 30px
+    padding-left: 24px
+    padding-right: 24px
+    .heading
+        margin-bottom: 16px
+    p
+        color: #666B71
+        font-size: 18px
+        margin: 0
+    .phone
+        font-size: 30px
+        color: #666B71
+        line-height: 1
+        margin-top: 10px
+
+
+    .row    
+        margin-top: 24px

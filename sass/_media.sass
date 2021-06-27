@@ -91,6 +91,32 @@
             align-self: stretch
             &-title
                 font-size: 20px
+
+    .slider-bg
+        min-height: auto
+        .splide
+            margin-top: 80px
+            margin-bottom: 80px
+
+    .advantage-card
+        &__text
+            font-size: 20px
+
+    .result-card
+        &__img
+            img
+                max-width: 180px
+
+        &__title
+            font-size: 28px
+            line-height: 36px
+        &__price
+            font-size: 24px
+            line-height: 36px
+        &__addr
+            font-size: 18px
+        &__desc
+            font-size: 16px
 // ≥992px
 +media-breakpoint-down(md)
     .section_delivery-intro, .section_smart-intro
@@ -165,7 +191,7 @@
             display: none
 
     .section_banner
-        padding-top: 80px
+        padding-top: 80px !important
 
     .section_banner-journal
         padding-bottom: 80px
@@ -237,6 +263,14 @@
             &:after
                 display: none
             
+
+    .section_advantages
+	    .advantage-card_2
+            top: 0
+
+    .section_advantages
+	    .advantage-card
+            margin-bottom: 30px
 // ≥768px
 +media-breakpoint-down(sm)
     .ecosystem-item
@@ -268,6 +302,32 @@
     .icon-element
         &__text
             font-size: 16px
+
+    .result-card
+        border-radius: 27px
+        padding: 20px
+        flex-direction: column
+        &__img
+            img
+                max-width: 100%
+        &__content
+            padding-left: 0
+        &__top
+            margin-top: 20px
+            padding-bottom: 12px
+
+        &__title
+            font-size: 24px
+            line-height: 30px
+        &__price
+            font-size: 20px
+            line-height: 30px
+        &__addr
+            font-size: 16px
+        &__desc
+            font-size: 14px
+        .btn-more
+            margin-bottom: 15px
 // ≥576px
 +media-breakpoint-down(xs)
     .product-card
@@ -295,7 +355,11 @@
             font-size: 18px
     
 
-
+    .result-card
+        &__top
+            flex-direction: column
+        &__price
+            text-align: left
     .section_quote
         .container
             padding-bottom: 170px

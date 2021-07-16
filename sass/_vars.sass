@@ -140,6 +140,59 @@ a.btn
             text-decoration: none
             color: #076197
 
+.mark-leaf
+    color: #666B71
+    font-size: 18px
+    display: inline-block
+    background: #F2F7FA
+    border: 1px solid #91BF29
+    box-sizing: border-box
+    box-shadow: 10px 10px 24px rgba(180, 255, 10, 0.3)
+    border-radius: 30px 0px
+    padding-left: 45px
+    padding-right: 45px
+    padding-top: 17.5px
+    padding-bottom: 17.5px
+
+
+.icon-block
+    width: 126px
+    height: 126px
+    background: radial-gradient(107.54% 107.54% at 15.87% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+    backdrop-filter: blur(4px)
+    border-radius: 50%
+    position: relative
+    &:after
+        content: ''
+        display: block
+        width: 62.67px
+        height: 70.5px
+        top: 50%
+        position: absolute
+        margin-top: -35.25px
+        margin-left: 31.665px
+        background-repeat: no-repeat
+        background-position: 0 0
+        background-image: url(../img/block.svg)
+
+.block-3d 
+    width: 768px
+    height: 513px
+    max-width: 100%
+    margin-left: auto
+    margin-right: auto
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-image: url(../img/3d.jpg)
+    background-size: 768px 513px
+    background-size: cover
+    padding-top: 179px
+    text-align: center
+    .icon-block
+        left: 50%
+        margin-left: -63px
+    .btn
+        display: inline-block
 .banner
     color: #666B71
     padding-left: 20px
@@ -851,7 +904,6 @@ a.btn
             margin-top: 45px
         &_3
             margin-top: 90px
-
         &_5
             margin-top: -80px
         &_6
@@ -873,6 +925,20 @@ a.btn
         &:hover
             background-color: rgba(255,255,255,1)
 
+
+    &_pansion
+        .advantages
+            &__item
+                &_1
+                    margin-top: 0
+                &_2
+                    margin-top: -45px
+                &_3
+                    margin-top: 0
+                &_5
+                    margin-top: -45px
+                &_6
+                    margin-top: -75px
 .icon-element
     display: flex
     margin-top: 50px
@@ -1053,7 +1119,7 @@ a.btn
     background: #F2F7FA
     border-radius: 30px
     padding-right: 30px
-    padding-left: 40px
+    padding-left: 30px
     &__icon
         margin-top: auto
         margin-bottom: auto
@@ -1096,3 +1162,100 @@ a.btn
 
     .row    
         margin-top: 24px
+
+
+.gallery
+    display: flex
+    width: 100%
+    position: relative
+    &__image
+        border-radius: 30px
+        overflow: hidden
+        padding: 10px
+        img
+            border-radius: 30px
+            overflow: hidden
+            width: 367px
+            height: 240px
+    &__col
+        &_1
+            margin-top: 246px
+        &_2
+            margin-top: 120px
+        &_4
+            margin-top: 110px
+        &_5
+            margin-top: 240px
+        &_6
+            margin-top: 368px
+
+
+.table
+    overflow-x: auto
+    table
+        width: 100%
+        border-radius: 30px
+        overflow: hidden
+        th,td
+            padding-left: 20px
+            padding-right: 20px
+            padding-top: 20px
+            padding-bottom: 20px
+            min-height: 80px
+        th
+            font-size: 20px
+            line-height: 140%
+            font-weight: 500
+            color: #076197
+            background: #F2F7FA
+            border-bottom: 2px solid #fff
+        td
+            font-weight: normal
+            font-size: 20px
+            line-height: 140%
+            color: #666B71
+            background: #F2F7FA
+            border-bottom: 2px solid #fff
+        tr:last-child
+            th,td
+                border-bottom: 0
+
+
+.map-info
+    &__block
+        width: 464px
+        height: 600px
+        background-color: #fff
+        border-radius: 30px
+        padding-left: 25px
+        padding-right: 25px
+        padding-top: 45px
+        padding-bottom: 30px
+        position: relative
+        &-title
+            color: #303844
+        &-addr
+            font-size: 24px
+            color: #303844
+            margin-top: 40px
+        &-phones
+            margin-top: 30px
+            a
+                font-size: 24px
+                color: #303844
+                text-decoration: none
+                transition: .3s ease
+                &:hover
+                    color: $accent
+        &-soc
+            position: absolute
+            bottom: 30px
+            left: 25px
+            a
+                display: inline-block
+                width: 44px
+                height: 44px
+                margin-right: 10px
+                img
+                    width: 44px
+                    height: 44px

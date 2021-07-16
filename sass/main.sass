@@ -27,7 +27,8 @@ body
 		border: #666 1px solid
 		outline: none
 
-
+.overflow-auto
+	overflow: auto
 
 .section_products
     .heading
@@ -78,6 +79,12 @@ body
 	.form
 		margin-top: 80px
 
+
+.bg-cover
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+
 .section_delivery-intro, .section_smart-intro
 	background-image: url(../img/bg-delivery.jpg)
 	background-repeat: no-repeat
@@ -107,6 +114,16 @@ body
 	background-image: url(../img/bg-smart.jpg)
 .section-scroll-track
 	padding-top: 110px
+
+.section_pansion-intro
+	.container
+		padding-top: 160px
+		padding-bottom: 160px
+		position: relative
+	.mark-leaf
+		position: absolute
+		bottom: 30px
+		left: 15px
 
 .header
 	position: fixed
@@ -303,9 +320,27 @@ body
 		top: -20px
 
 
+.section_advantages-2
+	padding-bottom: 80px
+	.advantage-card_2
+		position: relative
+		top: 20px
+
 .section_search-result
 	.result-card
 		margin-bottom: 20px
 
-		
+
+.section_gallery
+	overflow-x: hidden
+
+.section_map
+	.map-wrapper
+		position: relative
+	.map-info
+		width: 100%
+		position: absolute
+		top: 112px
+		left: 0
+
 @import "media" // Always at the end

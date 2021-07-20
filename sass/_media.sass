@@ -110,8 +110,8 @@
     .result-card
         &__img
             img
-                max-width: 180px
-
+                width: 180px 
+                height: 160px 
         &__title
             font-size: 28px
             line-height: 36px
@@ -322,7 +322,17 @@
                 &-soc
                     margin-top: 30px
                     position: static
-    // ≥768px
+
+    .result-card
+        &__img
+            img
+                width: 236px 
+                height: 210px 
+    .section_search-result
+        .form_search
+            position: static
+            top: 0
+// ≥768px
 +media-breakpoint-down(sm)
     .ecosystem-item
         width: 100% !important
@@ -360,7 +370,8 @@
         flex-direction: column
         &__img
             img
-                max-width: 100%
+                width: 100%
+                height: auto 
         &__content
             padding-left: 0
         &__top

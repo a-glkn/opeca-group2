@@ -122,6 +122,18 @@
             font-size: 18px
         &__desc
             font-size: 16px
+
+
+    .result-card__btns 
+        .btn
+            padding: 5px
+
+
+    .gallery
+        &__image
+            img
+                width: 290px
+                height: 190px
 // ≥992px
 +media-breakpoint-down(md)
     .section_delivery-intro, .section_smart-intro
@@ -279,18 +291,42 @@
 	    .advantage-card
             margin-bottom: 30px
 
-    
+    .gallery-slider
+        .splide__slide
+            display: none
+        .splide__slide.is-active
+            display: block
+            .gallery__image
+                position: relative
+                &:after
+                    cursor: pointer
+                    content: ''
+                    position: absolute
+                    width: 64px
+                    height: 64px
+                    bottom: 40px
+                    right: 40px
+                    background-repeat: no-repeat
+                    background-position: 0 0
+                    background-image: url(../img/zoom.svg)
+
+        .splide__list
+            width: 100%
     .gallery
-        display: flex
         width: 100%
         position: relative
-        flex-wrap: wrap
         &__image
+            display: none
+            &:first-child
+                display: block
             img
                 width: 100%
                 height: auto
         &__col
             width: 100%
+            display: none
+            &:first-child
+                display: block
             &_1
                 margin-top: 0
             &_2

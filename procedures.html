@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Опека</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#219cdc">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="header-inside">	
+
+	<header class="header">
+		<div class="container">
+			<a href="#" class="header__logo">
+				<svg>
+					<use xlink:href="img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+
+			<ul class="header__menu">
+				<li><a href="#">Пансионаты</a></li>
+				<li><a href="#">Патронаж</a></li>
+				<li><a href="#">Опека Журнал</a></li>
+				<li><a href="#">Опека Безопасность</a></li>
+				<li><a href="#">Опека Плюс+</a></li>
+				<li><a href="#">Документы</a></li>
+			</ul>
+
+			<div class="header__phone"><a href="tel:88005555403">8(800) 555-54-03</a></div>
+
+			<div class="menu-toggler"><i></i></div>
+		</div>
+	</header>
+
+	<div class="menu-wrapper">
+		<div class="menu-wrapper__inner">
+
+			<nav class="menu">
+				<ul>
+					<li class="phone"><a href="tel:88005555403">8(800) 555-54-03</a></li>
+					<li><a href="#">Пансионаты</a></li>
+					<li><a href="#">Патронаж</a></li>
+					<li><a href="#">Опека Журнал</a></li>
+					<li><a href="#">Опека Безопасность</a></li>
+					<li><a href="#">Опека Плюс+</a></li>
+					<li><a href="#">Документы</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+
+	<section class="section section_intro">
+		<div class="splide intro-slider">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide" style="background-image: url(img/pr-1.jpg);">
+						<div class="container d-flex h-100">
+							<div class="row align-self-center">
+								<div class="col-xl-8 col-lg-9">
+									<div class="heading heading_md">Восстановительные процедуры по программе Опека</div>
+									<div class="text">
+										<ul>
+											<li>3 региона присутствия</li>
+											<li>Собственная медицинская служба</li>
+											<li>Работаем с гериатрическими институтами</li>
+											<li>Современные программы реабилитации</li>
+										</ul>
+									</div>
+									<button class="btn" onClick="openPopup('call-popup');">Перезвонить мне</button>
+								</div>
+							</div>
+						</div>
+					</li>
+				
+					<li class="splide__slide" style="background-image: url(img/pr-2.jpg);">
+						<div class="container d-flex h-100">
+							<div class="row align-self-center">
+								<div class="col-xl-8 col-lg-9">
+									<div class="heading heading_md">Восстановление после инсульта</div>
+									<div class="text">
+										<ul>
+											<li>3 региона присутствия</li>
+											<li>Собственная медицинская служба</li>
+											<li>Работаем с гериатрическими институтами</li>
+										</ul>
+									</div>
+									<button class="btn" onClick="openPopup('call-popup');">Перезвонить мне</button>
+								</div>
+							</div>
+						</div>
+					</li>
+				
+					<li class="splide__slide" style="background-image: url(img/pr-3.jpg);">
+						<div class="container d-flex h-100">
+							<div class="row align-self-center">
+								<div class="col-xl-8 col-lg-9">
+									<div class="heading heading_md">Восстановление легких после операций</div>
+									<div class="text">
+										<ul>
+											<li>Собственная медицинская служба</li>
+											<li>Работаем с гериатрическими институтами</li>
+											<li>Современные программы реабилитации</li>
+										</ul>
+									</div>
+									<button class="btn" onClick="openPopup('call-popup');">Перезвонить мне</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="splide__slide" style="background-image: url(img/pr-4.jpg);">
+						<div class="container d-flex h-100">
+							<div class="row align-self-center">
+								<div class="col-xl-8 col-lg-9">
+									<div class="heading heading_md">Восстановление легких после операций</div>
+									<div class="text">
+										<ul>
+											<li>Работаем с гериатрическими институтами</li>
+											<li>Современные программы реабилитации</li>
+										</ul>
+									</div>
+									<button class="btn" onClick="openPopup('call-popup');">Перезвонить мне</button>
+								</div>
+							</div>
+						</div>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-offset bg-blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+
+					<div class="advantages advantages_procedures">
+						<div class="advantages__item advantages__item_1">
+							<div class="advantages__item-icon">
+								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.16666 7.33333V12.8333C9.16666 14.292 9.74612 15.691 10.7776 16.7224C11.809 17.7539 13.208 18.3333 14.6667 18.3333C16.1253 18.3333 17.5243 17.7539 18.5557 16.7224C19.5872 15.691 20.1667 14.292 20.1667 12.8333V7.33333M34.8333 5.5V27.5H25.6667C25.6245 20.7515 26.004 13.9223 34.8333 5.5ZM34.8333 27.5V38.5H33V33L34.8333 27.5ZM14.6667 7.33333V38.5V7.33333Z" stroke="#FDBF00" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="advantages__item-title">Диетическая<br>пища</div>
+							<div class="advantages__item-text">Сбалансированное 5-ти разовое питание с учетом рекомендаций диетолога</div>
+						</div>
+
+						<div class="advantages__item advantages__item_2">
+							<div class="advantages__item-icon">
+								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" stroke="#1169C1" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M22 12.8333V22L27.5 27.5" stroke="#1169C1" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="advantages__item-title">Помощь<br>в любую минуту</div>
+							<div class="advantages__item-text">Полный уход 24 часа в сутки (помощь в принятии пищи,
+								передвижении, сопровождение на прогулки,
+								смена памперсов, помощь в проведении гигиенических процедур)</div>
+						</div>
+
+						<div class="advantages__item advantages__item_3">
+							<div class="advantages__item-icon">
+								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 7.33337H9.16667C8.19421 7.33337 7.26158 7.71968 6.57394 8.40732C5.88631 9.09495 5.5 10.0276 5.5 11V17.4167C5.5 20.091 6.56235 22.6557 8.45334 24.5467C10.3443 26.4377 12.9091 27.5 15.5833 27.5C18.2576 27.5 20.8223 26.4377 22.7133 24.5467C24.6043 22.6557 25.6667 20.091 25.6667 17.4167V11C25.6667 10.0276 25.2804 9.09495 24.5927 8.40732C23.9051 7.71968 22.9725 7.33337 22 7.33337H20.1667" stroke="#6113C3" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M14.6667 27.5C14.6667 28.9445 14.9512 30.3749 15.504 31.7095C16.0568 33.0441 16.867 34.2567 17.8885 35.2782C18.9099 36.2996 20.1226 37.1099 21.4571 37.6627C22.7917 38.2155 24.2221 38.5 25.6667 38.5C27.1112 38.5 28.5416 38.2155 29.8762 37.6627C31.2108 37.1099 32.4234 36.2996 33.4448 35.2782C34.4663 34.2567 35.2765 33.0441 35.8293 31.7095C36.3821 30.3749 36.6667 28.9445 36.6667 27.5V22" stroke="#6113C3" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M20.1667 5.5V9.16667" stroke="#6113C3" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M11 5.5V9.16667" stroke="#6113C3" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M36.6667 22C38.6917 22 40.3333 20.3583 40.3333 18.3333C40.3333 16.3082 38.6917 14.6666 36.6667 14.6666C34.6416 14.6666 33 16.3082 33 18.3333C33 20.3583 34.6416 22 36.6667 22Z" stroke="#6113C3" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="advantages__item-title">Присмотр<br>сотрудников</div>
+							<div class="advantages__item-text">Контроль приема назначенных врачом лекарственных препаратов</div>
+						</div>
+
+						<div class="advantages__item advantages__item_4">
+							<div class="advantages__item-icon">
+								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.5 21.9999L20.1667 25.6666L27.5 18.3333" stroke="#EC5703" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M22 5.5C26.2823 9.28872 31.8715 11.2614 37.5833 11C38.4149 13.8289 38.6694 16.796 38.3315 19.7252C37.9937 22.6543 37.0706 25.4857 35.6169 28.051C34.1632 30.6163 32.2087 32.8632 29.8695 34.6582C27.5303 36.4532 24.8541 37.7597 22 38.5C19.1459 37.7597 16.4697 36.4532 14.1305 34.6582C11.7913 32.8632 9.83675 30.6163 8.38307 28.051C6.9294 25.4857 6.00623 22.6543 5.66842 19.7252C5.33061 16.796 5.58506 13.8289 6.41665 11C12.1284 11.2614 17.7176 9.28872 22 5.5" stroke="#EC5703" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="advantages__item-title">Специализированное<br>оборудование</div>
+							<div class="advantages__item-text">Предоставление в пользование специализированного оборудования</div>
+						</div>
+
+						<div class="advantages__item advantages__item_5">
+							<div class="advantages__item-icon">
+								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M38.5 33V18.3333C38.5 17.3609 38.1137 16.4282 37.4261 15.7406C36.7384 15.053 35.8058 14.6666 34.8333 14.6666H20.1667V25.6666M5.5 12.8333V33V12.8333ZM5.5 25.6666H38.5H5.5Z" stroke="#D746EE" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M12.8333 20.1667C13.8459 20.1667 14.6667 19.3459 14.6667 18.3333C14.6667 17.3208 13.8459 16.5 12.8333 16.5C11.8208 16.5 11 17.3208 11 18.3333C11 19.3459 11.8208 20.1667 12.8333 20.1667Z" stroke="#D746EE" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="advantages__item-title">Соблюдение<br>чистоты</div>
+							<div class="advantages__item-text">Смена и стирка постельного и нательного белья</div>
+						</div>
+
+						<div class="advantages__item advantages__item_6">
+							<div class="advantages__item-icon">
+								<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" stroke="#91BF29" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M18.3333 30.25L22 24.75M22 24.75L25.6667 30.25M22 24.75V21.0833M22 21.0833L27.5 19.25M22 21.0833L16.5 19.25" stroke="#91BF29" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M22 14.6667C22.5063 14.6667 22.9167 14.2563 22.9167 13.75C22.9167 13.2438 22.5063 12.8334 22 12.8334C21.4938 12.8334 21.0834 13.2438 21.0834 13.75C21.0834 14.2563 21.4938 14.6667 22 14.6667Z" stroke="#91BF29" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="advantages__item-title">Заниятия<br>каждый день</div>
+							<div class="advantages__item-text">Регулярные прогулки и организованный досуг</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-offset">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					
+					<form class="form form_designed">
+						<div class="heading heading_sm">Записаться на экскурсию</div>
+						
+						<p>Заполните персоалные данные и мы перезвоним вам или позвоните по телефону</p>
+						<div class="phone">+7 (800) 555 54 03</div>
+						
+						<div class="row">
+							<div class="col-lg-4">
+								<input type="text" class="form__input" placeholder="ФИО">
+							</div>
+
+							<div class="col-lg-4">
+								<input type="text" class="form__input" placeholder="Телефон*">
+							</div>
+
+							<div class="col-lg-4">
+								<button class="btn">Отправить</button>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section_search-result bg-blue section-offset">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading heading_md text-center">Пансионаты</div>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-xl-12 col-content">
+					<div class="result-card">
+						<div class="result-card__img"><img src="img/res-1.jpg" alt=""></div>
+
+						<div class="result-card__content">
+							<div class="result-card__top">
+								<div class="result-card__title">Енисейский</div>
+								<div class="result-card__price">от 1520р</div>
+							</div>
+
+							<div class="result-card__addr">Всеволожск, улица Бибиковская 27</div>
+
+							<div class="result-card__desc">
+								
+								Собственная территория и красивый фруктовый сад <br>
+								Экскурсии в ближайшие парки и усадьбы!<br>
+								70% стоимости проживания - за счет государства!<br>
+								Одно - , двух - и трехместные номера!
+
+							</div>
+
+							<div class="result-card__btns">
+								<button class="btn btn-more btn_w-auto">Подробнее</button><button class="btn btn-book btn_w-auto btn_trans">Забронировать</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="result-card">
+						<div class="result-card__img"><img src="img/res-2-2.jpg" alt=""></div>
+
+						<div class="result-card__content">
+							<div class="result-card__top">
+								<div class="result-card__title">Енисейский 2</div>
+								<div class="result-card__price">от 2800р</div>
+							</div>
+
+							<div class="result-card__addr">Всеволожск, улица Бибиковская 27</div>
+
+							<div class="result-card__desc">
+								
+								Собственная территория и красивый фруктовый сад <br>
+								Экскурсии в ближайшие парки и усадьбы!<br>
+								70% стоимости проживания - за счет государства!<br>
+								Одно - , двух - и трехместные номера!
+
+							</div>
+
+							<div class="result-card__btns">
+								<button class="btn btn-more btn_w-auto">Подробнее</button><button class="btn btn-book btn_w-auto btn_trans">Забронировать</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-offset">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading heading_md text-center">Наши пансионаты</div>
+					<div class="text text-center mt-3">
+						Первая крупнейшая сеть<br>пансионатов с лечением для пожилых людей
+					</div>
+
+					<div class="digits mt-5">
+						<div class="digits__item">
+							<div class="heading heading_lg">от 2 000 ₽</div>
+							за сутки
+						</div>
+
+						<div class="digits__item">
+							<div class="heading heading_lg">от 30 000 ₽</div>
+							в месяц
+						</div>
+					</div>
+
+					<div class="text-center mt-5">
+						<button class="btn btn_trans">Подробнее</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section bg-blue section-offset section_reviews">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading heading_md text-center">Отзывы</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+
+					<div class="reviews-slider splide reviews-slider_bg-white">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide" >
+									<div class="reviews-item">
+										<div class="reviews-item__img"><img src="img/sample.jpg" alt=""></div>
+										
+										<div class="reviews-item__tags"><a href="#">#тег№1</a> <a href="#">#тег№2</a> <a href="#">#тег№3</a> <a href="#">#тег№4</a> <a href="#">#тег№5</a></div>
+
+										<div class="reviews-item__title">Иванова И.А.</div>
+									
+										<div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne...</div>
+									
+										<div class="reviews-item__date">16.04.2021</div>
+									</div>
+								</li>
+
+								<li class="splide__slide" >
+									<div class="reviews-item">
+										<div class="reviews-item__img"><img src="img/sample.jpg" alt=""></div>
+										
+										<div class="reviews-item__tags"><a href="#">#тег№1</a> <a href="#">#тег№2</a> <a href="#">#тег№3</a> <a href="#">#тег№4</a> <a href="#">#тег№5</a></div>
+
+										<div class="reviews-item__title">Иванова И.А.</div>
+									
+										<div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne...</div>
+									
+										<div class="reviews-item__date">16.04.2021</div>
+									</div>
+								</li>
+
+								<li class="splide__slide" >
+									<div class="reviews-item">
+										<div class="reviews-item__img"><img src="img/sample.jpg" alt=""></div>
+				
+										<div class="reviews-item__tags"><a href="#">#тег№1</a> <a href="#">#тег№2</a> <a href="#">#тег№3</a> <a href="#">#тег№4</a> <a href="#">#тег№5</a></div>
+
+										<div class="reviews-item__title">Иванова И.А.</div>
+													
+										<div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec quam felis, ultricies ne...</div>
+									
+										<div class="reviews-item__date">16.04.2021</div>
+									</div>
+								</li>
+
+								<li class="splide__slide" >
+									<div class="reviews-item">
+										<div class="reviews-item__img"><img src="img/sample.jpg" alt=""></div>
+										
+										<div class="reviews-item__tags"><a href="#">#тег№1</a> <a href="#">#тег№2</a> <a href="#">#тег№3</a> <a href="#">#тег№4</a> <a href="#">#тег№5</a></div>
+				
+										<div class="reviews-item__title">Иванова И.А.</div>
+													
+										<div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne...</div>
+									
+										<div class="reviews-item__date">16.04.2021</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+
+			<div class="row row-btn">
+				<div class="col-lg-12 text-center">
+					<button class="btn btn_thin">Все отзывы</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section_feedback section-offset">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="heading heading_md text-center">Помогите нам стать лучше</div>
+
+					<div class="text text-center">
+						Отправьте нам свои пожелания и предложения по работе Журнала Опека. Будем рады информационному партнерству. Разместим вашу информацию, если она полезна для читателей нашего журнала.
+					</div>
+				</div>
+			</div>
+			
+
+			<form class="form" action="">
+
+				<div class="row">
+					<div class="col-md-4">
+						<input type="text" class="form__input" placeholder="ФИО">
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form__input" placeholder="Телефон">
+					</div>
+					<div class="col-md-4">
+						<input type="text" class="form__input" placeholder="E-mail">
+					</div>
+				</div>
+
+				<textarea class="form__text" placeholder="Поле для текста:"></textarea>
+
+				<div class="text-center">
+					<button class="btn btn_secondary">Отправить</button>
+				</div>
+
+			</form>
+
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="footer__logo">
+						<svg>
+							<use xlink:href="img/sprite.svg#logo"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<ul class="footer__menu">
+						<li><a href="#">Пансионаты</a></li>
+						<li><a href="#">Патронаж</a></li>
+						<li><a href="#">Опека Журнал</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
+					<ul class="footer__menu">
+						<li><a href="#">Опека Безопасность</a></li>
+						<li><a href="#">Опека Плюс+</a></li>
+						<li><a href="#">Документы</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-contacts">
+					<div class="footer__phone"><a href="tel:88005555403">8(800) 555-54-03</a></div>
+
+					<div class="footer__contacts"><a href="tel:84952815006">8 (495) 281-50-06</a></div>
+					<div class="footer__contacts"><a href="mailto:info@sgc-opeca.ru">info@sgc-opeca.ru</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="popup-overlay"></div>
+
+	<div id="order-popup" class="popup">
+		<div class="popup__body">
+			<div class="container-fluid">
+				<div class="heading text-center heading_md">Ваша заявка</div>
+				<div class="text text-center">
+					Пожалуйста заполните все поля:
+				</div>
+				<form class="form">
+					<div class="row">
+						<div class="col-md-6">
+							<select name="" id="type-popup">
+								<option value="0">Тип диеты</option>
+								<option value="1">Здоровая диета</option>
+								<option value="2">Диета при диабете</option>
+								<option value="3">Щадящая диета</option>
+							</select>
+						</div>
+
+						<div class="col-md-6">
+							<select name="" id="days-popup">
+								<option value="0">Количество дней</option>
+								<option value="1">5 дней в неделю</option>
+								<option value="2">7 дней в неделю</option>
+							</select>
+						</div>
+
+						<div class="col-md-6">
+							<input type="text" class="form__input form__input_h-50  form__input_fz-16" placeholder="Имя">
+						</div>
+
+						<div class="col-md-6">
+							<input type="text" class="form__input form__input_h-50  form__input_fz-16" placeholder="Телефон*">
+						</div>
+
+						<div class="col-md-12">
+							<input type="text" class="form__input form__input_h-50  form__input_fz-16" placeholder="Адрес доставки*">
+						</div>
+
+						<div class="col-md-12 text-center">
+							<button class="btn btn_h-50">Заказать</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="call-popup" class="popup">
+		<div class="popup__body">
+			<div class="container-fluid">
+				<div class="heading text-center heading_md">Введите ваш номер</div>
+				<div class="text text-center">
+					Пожалуйста заполните поле и мы вам перезвоним
+				</div>
+				<form class="form">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="text" class="form__input form__input_h-50  form__input_fz-16" placeholder="Телефон*">
+						</div>
+						
+						<div class="col-md-12 text-center">
+							<button class="btn btn_h-50">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
